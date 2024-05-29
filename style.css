@@ -7,7 +7,7 @@ body {
     font-family: "Rubik", sans-serif;
     position: relative;
     height: 100vh;
-    background-color: #efefef   ;
+    background-color: #ffffff   ;
 }
 body::before {
     content: "";
@@ -26,20 +26,17 @@ body::after {
     border-radius: 250px 250px 0 0;
     right: -100px;
     bottom: 0;
-    background-color: #dbdbdbb2;
-}
-.container {
-    display: flex;
+    background-color: #ececec61;
 }
 .container .purple .phone {
     background-color: #fff;
-    width: 300px;
-    height: 580px;
+    width: 340px;
+    height: 680px;
     position: absolute;
     top: 90px;
     left: 390px;
     border-radius: 35px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 20px;
 }
 .container .purple .phone::before {
     content: "";
@@ -51,15 +48,16 @@ body::after {
     left: 50%;
     transform: translateX(-50%);
     border-radius: 10px;
+    z-index: 3;
 }
 .container .purple .phone .header {
     position: relative;
-    width: 280px;
+    width: 315px;
     height: 80px;
     margin: auto;
     align-items: center;
     display: flex;
-    background: linear-gradient(190deg, hsl(293, 100%, 63%) 10%, hsl(264, 100%, 61%) 100%);
+    background: linear-gradient(225deg, hsl(293, 100%, 63%) 5%, hsl(264, 100%, 61%) 100%);
     margin-top: 15px;
     border-radius: 25px 25px 10px 10px;
     -webkit-border-radius: 25px 25px 10px 10px;
@@ -68,7 +66,9 @@ body::after {
     -o-border-radius: 25px 25px 10px 10px;
     padding: 15px;
     padding-top: 30px;
+    z-index: 2;
 }
+
 .container .purple .phone .header .icon {
     width: 10px;
     rotate: 180deg;
@@ -85,7 +85,7 @@ body::after {
     border: 2px solid #fff;
 }
 .container .purple .phone .header .person .info {
-    padding-right: 75px;
+    padding-right: 115px;
     padding-left: 10px;
 }
 .container .purple .phone .header .person .info .name {
@@ -99,4 +99,130 @@ body::after {
 }
 .container .purple .phone .header .person .dots {
     width: 5px;
+}
+.container .purple .phone .chat {
+    background-color: hsl(270, 20%, 96%);
+    width: 315px;
+    margin: auto;
+    height: 595px;
+    border-radius: 25px;
+    position: relative;
+    top: -22px;
+    padding-top: 35px;
+}
+.messageGray {
+    width: 195px;
+    background-color: hsl(282.46deg 14.81% 87.98% / 75%);
+    margin-left: 14px;
+    padding: 10px;
+    border-radius: 20px 20px 20px 0;
+    color: hsl(276, 55%, 52%);
+    font-size: 12px;
+}
+.messageGray:not(:first-child) {
+    margin-top: 14px;
+}
+.container .purple .phone .chat .dogimgs {
+    display: flex;
+    margin: 10px 0;
+}
+.container .purple .phone .chat .dogimgs img{
+    width: 55px;
+    margin: 5px;
+    border-radius: 14px;
+    position: relative;
+    left: 115px;
+}
+.messageWhite {
+    width: 195px;
+    background-color: hwb(0 100% 0%);
+    margin-left: 14px;
+    padding: 10px;
+    border-radius: 20px 20px 0 20px;
+    color: hsl(276, 55%, 52%);
+    font-size: 12px;
+    position: relative;
+    left: 95px;
+    margin-top: 14px;
+}
+.container .purple .phone .chat .price {
+    width: 215px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(30deg, hsl(293, 100%, 63%) 5%, hsl(264, 100%, 61%) 100%);
+    margin: 10px 14px;
+    padding: 12px;
+    border-radius: 14px 14px 14px 0;
+}
+.container .purple .phone .chat .price .con {
+    display: flex;
+    align-items: center;
+}
+.container .purple .phone .chat .price .circle {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.container .purple .phone .chat .price p{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 200;
+    padding-left: 10px;
+}
+.container .purple .phone .chat .price h2{
+    color: #fff;
+    font-weight: 600;
+    font-size: 17px;
+}
+.container .purple .phone .text {
+    width: 300px;
+    background-color: #fff;
+    height: 50px;
+    margin: auto;
+    border-radius: 30px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;   
+    justify-content: space-between;
+}
+.container .purple .phone .text p {
+    color: hsl(206, 6%, 79%);
+    padding: 15px;
+}
+.container .purple .phone .text .icon {
+    background-color: hsl(271, 36%, 24%);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 12px;
+}
+.container .purple .phone .text .icon img {
+    position: absolute;
+    width: 15px;
+    left: 10px;
+    top: 4px;
+}
+.gray {
+    position: relative;
+    width: 600px;
+    left: 54%;
+    top: 350px;
+}
+.gray h1 {
+    color: hsl(271, 36%, 24%);
+    font-size: 45px;
+    font-weight: 600;
+}
+.gray p {
+    color: hsl(270, 7%, 64%);
+    width: 450px;
+    padding-top: 25px;
+    line-height: 1.8;
 }
